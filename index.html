@@ -20,6 +20,48 @@
       </header>
       <form id="survey-form">
         <div class="form-group">
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enteryour name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-group">
+          <p>Which option best describes your most used gaming platform ?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">Select most used platform</option>
+            <option value="Console">Console</option>
+            <option value="Handhelds">Handhelds</option>
+            <option value="Cellphone">Cellphone</option>
+            <option value="Computer">Computer</option>
+            <option value="other">Other(vr,homebrew, etc)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend videogames to a friend?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Definitely</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Maybe</label>
+  
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Not sure</label>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of videogames?</p>
+          <select id="most-like" name="mostLike" class="form-control" required="">
+            <option disabled="" selected="" value="">Select an option</option>
+            <option value="WorldBuilding">World Building</option>
+            <option value="StoryTelling">Story Telling</option>
+            <option value="community">Community</option>
+            <option value="Multiplayer">Multiplayer options</option>
+            <option value="CompetitivePlay">Competitive Play</option>
+          </select>
+        </div>
+        <div class="form-group">
           <p>Which video games categories would you like to play? <span class="clue">(Check all that apply)</span></p>
           <label class="label-item">
             <input name="prefer" value="sandbox" type="checkbox" class="input-checkbox">
