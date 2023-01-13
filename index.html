@@ -3,17 +3,66 @@
   <head>
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
-    <header class="header">
-      <h1 id="title">freeCodeCamp Survey Form</h1>
-    </header>
-    <form id="survey-form">
-
-    </form>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Epic VideoGames Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <p>Which video games categories would you like to play? <span class="clue">(Check all that apply)</span></p>
+          <label class="label-item">
+            <input name="prefer" value="sandbox" type="checkbox" class="input-checkbox">
+            Sandbox
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="real-time-strategy" type="checkbox" class="input-checkbox">
+            Real Time Strategy
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="shooters" type="checkbox" class="input-checkbox">
+            Shooters
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="moba" type="checkbox" class="input-checkbox">
+            MOBA
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="role-playing" type="checkbox" class="input-checkbox">
+            Role Playing
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="simulations-sports" type="checkbox" class="input-checkbox">
+            Simulations and Sports
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="puzzles-party-games" type="checkbox" class="input-checkbox">
+            Puzzlers and Party Games
+          </label>
+          <label class="label-item">
+            <input name="prefer" value="action-adventure" type="checkbox" class="input-checkbox">
+            Action Adventure
+          </label>
+        </div>
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your commet here..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
    
     <!-- <script  src="js/index.js"></script> -->
   </body>

@@ -1,3 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f3f3f3;
+}
+
 body::before {
     content: '';
     position: fixed;
@@ -6,9 +18,87 @@ body::before {
     height: 100%;
     width: 100%;
     z-index: -1;
-    background: var(--color-darkblue);
+    background: #1b1b32;
     background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+p {
+    font-size: 1.125rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
+    max-width: 720px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+}
+
+#survey-form {
+    background: rgba(27, 27, 50, 0.8);
+    border-radius: 0.25rem;
+    padding: 2.5rem;
+}
+
+.form-group {
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+.clue {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+.label-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.625rem;
+    resize: vertical;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: inherit;
+    padding: 0.75rem;
+    margin: 0;
+    background: #37af65;
+    color: inherit;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
 }
