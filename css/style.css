@@ -38,6 +38,13 @@ h1 {
     line-height: 1.2;
 }
 
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
 .container {
     width: 100%;
     margin: 3.125rem auto 0 auto;
@@ -65,17 +72,25 @@ h1 {
     padding: 0.25rem;
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    height: 2.375rem;
+    padding: 0.375rem 0.75rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+}
+
+
 .clue {
     margin-left: 0.25rem;
     font-size: 0.9rem;
     color: #e4e4e4;
-}
-
-.label-item {
-    display: flex;
-    align-items: center;
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
 }
 
 .input-textarea {

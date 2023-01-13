@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <div class="container">
       <header class="header">
         <h1 id="title" class="text-center">Epic VideoGames Survey Form</h1>
@@ -20,6 +20,7 @@
       </header>
       <form id="survey-form">
         <div class="form-group">
+          <label id="name-label" for="email">Name</label>
           <input type="text" name="name" id="name" class="form-control" placeholder="Enteryour name" required>
         </div>
         <div class="form-group">
@@ -63,35 +64,35 @@
         </div>
         <div class="form-group">
           <p>Which video games categories would you like to play? <span class="clue">(Check all that apply)</span></p>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="sandbox" type="checkbox" class="input-checkbox">
             Sandbox
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="real-time-strategy" type="checkbox" class="input-checkbox">
             Real Time Strategy
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="shooters" type="checkbox" class="input-checkbox">
             Shooters
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="moba" type="checkbox" class="input-checkbox">
             MOBA
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="role-playing" type="checkbox" class="input-checkbox">
             Role Playing
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="simulations-sports" type="checkbox" class="input-checkbox">
             Simulations and Sports
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="puzzles-party-games" type="checkbox" class="input-checkbox">
             Puzzlers and Party Games
           </label>
-          <label class="label-item">
+          <label>
             <input name="prefer" value="action-adventure" type="checkbox" class="input-checkbox">
             Action Adventure
           </label>
@@ -106,6 +107,6 @@
       </form>
     </div>
    
-    <!-- <script  src="js/index.js"></script> -->
+    <script  src="js/index.js"></script>
   </body>
 </html>
